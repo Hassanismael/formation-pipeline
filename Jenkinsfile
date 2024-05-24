@@ -2,17 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Connect to github') {
-            steps {
-                git(
-                    url: "https://github.com/Hassanismael/formation-pipeline",
-                    branch: "main"
 
-                )
-
-            }
-
-        }
         stage('Build Artifact') {
             steps {
                 sh 'mvn clean package -DskipTests=true'
