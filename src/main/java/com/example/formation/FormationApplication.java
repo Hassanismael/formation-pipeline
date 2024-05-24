@@ -15,6 +15,6 @@ public class FormationApplication {
 
 	@GetMapping("/hello")
 	public String Hello(){
-		return "<h2> Hello</h2>";
+		return "<h2> Hello branch dev</h2>";
 	}
 }
